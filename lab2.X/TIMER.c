@@ -7,10 +7,12 @@ void T2intr(void)
 {
 	INTCONbits.GIEH = 0;
 	RCONbits.IPEN = 1; // Enable Priority Features \par
-	IPR1bits.TMR2IP = 1;// Timer 2 is High Priority \par
+	IPR1bits.TMR2IP = 0;// Timer 2 is High Priority \par    -- CHANGE THIS FOR DIFFERENT PRIORITY
 	PIR1bits.TMR2IF = 0;// Clear Timer 2 Flag. \par
 	PIE1bits.TMR2IE = 1;// Enable Timer 2 Interrupt. \par
-	INTCONbits.GIEH = 1;// Enable Global Interrupt, High. \par
+    INTCONbits.GIEH = 1;  // enable global intertupt, high
+    INTCONbits.GIEL = 1; // enable low interrupt
+
 }
 
 void T4intr(void)
