@@ -894,55 +894,65 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;keypad_sandbox.c: 15:             if (key >= 0 && key < 10) LCD8send(key+0x30, 1);
 [p x WDT = OFF ]
 "17
-[; ;keypad_sandbox.c: 17: 
+[; ;keypad_sandbox.c: 17:             else if (key >=0 && key <14) LCD8send(key+0x41-10, 1);
 [v _main2 `(v ~T0 @X0 1 ef ]
 {
 [e :U _main2 ]
 [f ]
 "19
-[; ;keypad_sandbox.c: 19: 
+[; ;keypad_sandbox.c: 19:             else if (key==14) LCD8send('*', 1);
 [v _key `uc ~T0 @X0 1 a ]
 [e = _key -> -> 255 `i `uc ]
 "21
-[; ;keypad_sandbox.c: 21:             delay_ms(100);
+[; ;keypad_sandbox.c: 21:             else LCD8send('#', 1);
 [e ( _LCD8init ..  ]
 "22
-[; ;keypad_sandbox.c: 22: 
+[; ;keypad_sandbox.c: 22:             delay_ms(100);
 [e ( _KeyPadinit ..  ]
 "24
 [; ;keypad_sandbox.c: 24: 
 [e :U 542 ]
 {
 "25
-[; ;keypad_sandbox.c: 25:         }
+[; ;keypad_sandbox.c: 25: 
 [e = _key ( _Read_KeyPad ..  ]
 "27
-[; ;keypad_sandbox.c: 27: 
+[; ;keypad_sandbox.c: 27:     }
 [e $ ! != -> _key `i -> 255 `i 544  ]
 {
 "30
-[; ;keypad_sandbox.c: 30: }
+[; ;keypad_sandbox.c: 30: 
 [e ( _LCD8send (2 , -> -> 128 `i `uc -> -> 0 `i `uc ]
 "32
 [e $ ! && >= -> _key `i -> 0 `i < -> _key `i -> 10 `i 545  ]
 [e ( _LCD8send (2 , -> + -> _key `i -> 48 `i `uc -> -> 1 `i `uc ]
+[e $U 546  ]
+"34
 [e :U 545 ]
-"33
-[e ( _delay_ms (1 -> 100 `i ]
-"37
-[e $ ! && >= -> _key `i -> 0 `i > -> _key `i -> 10 `i 546  ]
-[e ( _LCD8send (2 , -> + -> _key `i -> 112 `i `uc -> -> 1 `i `uc ]
-[e :U 546 ]
+[e $ ! && >= -> _key `i -> 0 `i < -> _key `i -> 14 `i 547  ]
+[e ( _LCD8send (2 , -> - + -> _key `i -> 65 `i -> 10 `i `uc -> -> 1 `i `uc ]
+[e $U 548  ]
+"36
+[e :U 547 ]
+[e $ ! == -> _key `i -> 14 `i 549  ]
+[e ( _LCD8send (2 , -> -> 42 `ui `uc -> -> 1 `i `uc ]
+[e $U 550  ]
 "38
+[e :U 549 ]
+[e ( _LCD8send (2 , -> -> 35 `ui `uc -> -> 1 `i `uc ]
+[e :U 550 ]
+[e :U 548 ]
+[e :U 546 ]
+"39
 [e ( _delay_ms (1 -> 100 `i ]
-"42
+"43
 }
 [e :U 544 ]
-"43
+"44
 }
 [e :U 541 ]
 [e $U 542  ]
 [e :U 543 ]
-"47
+"48
 [e :UE 540 ]
 }

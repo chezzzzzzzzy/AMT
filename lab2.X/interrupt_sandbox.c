@@ -28,7 +28,8 @@ void interrupt low_priority LowIsr(void){   //Low priority interrupt
 void main(void) {
     int count = 0;
     char buffer[20];
-    int h = 0, m = 59, s = 50;
+    int h = 0, s = 0, ms = 0;
+    int sec = 0;
     LCD8init();
     TRISJ = 0x00;
     PORTJ = 0x00;
@@ -46,16 +47,16 @@ void main(void) {
             s++;
             if (s == 60){
                 //LCD8send(0x01, 0);
-                m++;
+                ms++;
                 s = 0;
             }
-            if (m == 60){
+            if (ms == 100){
                 //LCD8send(0x01, 0);
                 h++;
-                m = 0;
+                ms = 0;
                 s = 0;
             }
-            sprintf(buffer, "%02d : %02d : %02d" , h, m, s);      //sprintf(buffer, "Time: %02d:%02d" , sec/60, sec%60);
+            sprintf(buffer, "%02d : %02d" , ms, s);      //sprintf(buffer, "Time: %02d:%02d" , sec/60, sec%60);
             for (int i = 0; buffer[i] != 0; i++){  //when buffer[] is null char, stop
                 LCD8send(buffer[i], 1);
             }

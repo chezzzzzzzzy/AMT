@@ -8927,11 +8927,12 @@ void main2(void) {
             LCD8send(0x80, 0);
 
             if (key >= 0 && key < 10) LCD8send(key+0x30, 1);
-            delay_ms(100);
 
+            else if (key >=0 && key <14) LCD8send(key+0x41-10, 1);
 
+            else if (key==14) LCD8send('*', 1);
 
-            if (key >=0 && key > 10) LCD8send(key+0x70,1);
+            else LCD8send('#', 1);
             delay_ms(100);
 
 

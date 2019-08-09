@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.05 build -831301201 
-                                                                                               Mon Apr 22 16:22:22 2019
+                                                                                               Mon Jul 15 14:02:07 2019
 
 Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1 
      1                           	processor	18F97J60
@@ -548,10 +548,10 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
    529  001840  EE20  F0BC         	lfsr	2,main@F5215
    530  001844  EE10  F090         	lfsr	1,main@msg
    531  001848  0E09               	movlw	9
-   532  00184A                     u1041:
+   532  00184A                     u1051:
    533  00184A  CFDB FFE3          	movff	plusw2,plusw1
    534  00184E  06E8               	decf	wreg,f,c
-   535  001850  E2FC               	bc	u1041
+   535  001850  E2FC               	bc	u1051
    536                           
    537                           ;lcd_sandbox.c: 23: 
    538  001852  EC21  F00B         	call	_LCD8init	;wreg free
@@ -571,8 +571,8 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
    552  001876  6FAB               	movwf	(main@i+1)& (0+255),b
    553  001878  0E00               	movlw	0
    554  00187A  6FAA               	movwf	main@i& (0+255),b
-   555  00187C  D00E               	goto	l1635
-   556  00187E                     l1631:
+   555  00187C  D00E               	goto	l1645
+   556  00187E                     l1641:
    557                           
    558                           ; BSR set to: 0
    559  00187E  0E01               	movlw	1
@@ -588,7 +588,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
    569  001894  0100               	movlb	0	; () banked
    570  001896  4BAA               	infsnz	main@i& (0+255),f,b
    571  001898  2BAB               	incf	(main@i+1)& (0+255),f,b
-   572  00189A                     l1635:
+   572  00189A                     l1645:
    573                           
    574                           ; BSR set to: 0
    575  00189A  0E9A               	movlw	low main@buffer
@@ -599,7 +599,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
    580  0018A4  6EDA               	movwf	fsr2h,c
    581  0018A6  50DF               	movf	indf2,w,c
    582  0018A8  A4D8               	btfss	status,2,c
-   583  0018AA  D7E9               	goto	l1631
+   583  0018AA  D7E9               	goto	l1641
    584                           
    585                           ; BSR set to: 0
    586                           
@@ -774,8 +774,8 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
    741                           
    742                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 1375:     while (*cf
       +                          mt) {
-   743  0018CC  D013               	goto	l1565
-   744  0018CE                     l1563:
+   743  0018CC  D013               	goto	l1575
+   744  0018CE                     l1573:
    745                           
    746                           ; BSR set to: 0
    747                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 1376:         nout +
@@ -794,7 +794,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
    759  0018EE  2760               	addwf	_nout& (0+255),f,b
    760  0018F0  5041               	movf	?_vfpfcnvrt+1,w,c
    761  0018F2  2361               	addwfc	(_nout+1)& (0+255),f,b
-   762  0018F4                     l1565:
+   762  0018F4                     l1575:
    763                           
    764                           ; BSR set to: 0
    765                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 1375:     while (*cf
@@ -809,7 +809,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
    773  0018FE  50F5               	movf	tablat,w,c
    774  001900  0900               	iorlw	0
    775  001902  A4D8               	btfss	status,2,c
-   776  001904  D7E4               	goto	l1563
+   776  001904  D7E4               	goto	l1573
    777                           
    778                           ; BSR set to: 0
    779                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 1378:     return nou
@@ -899,7 +899,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
    851  001266  50F5               	movf	tablat,w,c
    852  001268  0A25               	xorlw	37
    853  00126A  A4D8               	btfss	status,2,c
-   854  00126C  D09A               	goto	l1541
+   854  00126C  D09A               	goto	l1551
    855                           
    856                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 681:         ++*fmt;
    857  00126E  C042  FFD9         	movff	vfpfcnvrt@fmt,fsr2l
@@ -939,7 +939,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
    888  0012A4  50F5               	movf	tablat,w,c
    889  0012A6  0A64               	xorlw	100
    890  0012A8  B4D8               	btfsc	status,2,c
-   891  0012AA  D00D               	goto	u1000
+   891  0012AA  D00D               	goto	u1010
    892                           
    893                           ; BSR set to: 0
    894  0012AC  C042  FFD9         	movff	vfpfcnvrt@fmt,fsr2l
@@ -954,8 +954,8 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
    903  0012BE  50F5               	movf	tablat,w,c
    904  0012C0  0A69               	xorlw	105
    905  0012C2  A4D8               	btfss	status,2,c
-   906  0012C4  D03F               	goto	l1525
-   907  0012C6                     u1000:
+   906  0012C4  D03F               	goto	l1535
+   907  0012C6                     u1010:
    908                           
    909                           ; BSR set to: 0
    910                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 827:             ++*
@@ -1007,7 +1007,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
    953  00133A  C01C  F040         	movff	?_dtoa,?_vfpfcnvrt
    954  00133E  C01D  F041         	movff	?_dtoa+1,?_vfpfcnvrt+1
    955  001342  0012               	return	
-   956  001344                     l1525:
+   956  001344                     l1535:
    957                           
    958                           ; BSR set to: 0
    959                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 1350:         if ((*
@@ -1024,7 +1024,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
    969  001356  50F5               	movf	tablat,w,c
    970  001358  0A25               	xorlw	37
    971  00135A  A4D8               	btfss	status,2,c
-   972  00135C  D016               	goto	l1535
+   972  00135C  D016               	goto	l1545
    973                           
    974                           ; BSR set to: 0
    975                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 1351:             ++
@@ -1045,7 +1045,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
    988  001374  C040  F003         	movff	vfpfcnvrt@fp,fputc@fp
    989  001378  C041  F004         	movff	vfpfcnvrt@fp+1,fputc@fp+1
    990  00137C  EC85  F00B         	call	_fputc	;wreg free
-   991  001380                     l1531:
+   991  001380                     l1541:
    992                           
    993                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 1353:             re
       +                          turn 1;
@@ -1054,7 +1054,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
    996  001384  0E01               	movlw	1
    997  001386  6E40               	movwf	?_vfpfcnvrt,c
    998  001388  0012               	return	
-   999  00138A                     l1535:
+   999  00138A                     l1545:
   1000                           
   1001                           ; BSR set to: 0
   1002                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 1357:         ++*fmt
@@ -1073,7 +1073,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1013  00139C  0E00               	movlw	0
   1014  00139E  6E40               	movwf	?_vfpfcnvrt,c
   1015  0013A0  0012               	return	
-  1016  0013A2                     l1541:
+  1016  0013A2                     l1551:
   1017                           
   1018                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 1362:     fputc((int
       +                          )(*fmt)[0], fp);
@@ -1099,7 +1099,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1038  0013CE  2ADE               	incf	postinc2,f,c
   1039  0013D0  0E00               	movlw	0
   1040  0013D2  22DD               	addwfc	postdec2,f,c
-  1041  0013D4  D7D5               	goto	l1531
+  1041  0013D4  D7D5               	goto	l1541
   1042  0013D6                     __end_of_vfpfcnvrt:
   1043                           	opt callstack 0
   1044                           
@@ -1173,12 +1173,12 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1102                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 281:     s = n < 0 ?
       +                           1 : 0;
   1103  001032  AE3D               	btfss	dtoa@n+7,7,c
-  1104  001034  D002               	goto	u810
+  1104  001034  D002               	goto	u820
   1105  001036  0E01               	movlw	1
-  1106  001038  D001               	goto	u820
-  1107  00103A                     u810:
+  1106  001038  D001               	goto	u830
+  1107  00103A                     u820:
   1108  00103A  0E00               	movlw	0
-  1109  00103C                     u820:
+  1109  00103C                     u830:
   1110  00103C  6E34               	movwf	dtoa@s,c
   1111  00103E  6A35               	clrf	dtoa@s+1,c
   1112                           
@@ -1186,7 +1186,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1114  001040  5034               	movf	dtoa@s,w,c
   1115  001042  1035               	iorwf	dtoa@s+1,w,c
   1116  001044  B4D8               	btfsc	status,2,c
-  1117  001046  D010               	goto	l1439
+  1117  001046  D010               	goto	l1449
   1118                           
   1119                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 283:         n = -n;
   1120  001048  1E3D               	comf	dtoa@n+7,f,c
@@ -1205,7 +1205,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1133  001062  223B               	addwfc	dtoa@n+5,f,c
   1134  001064  223C               	addwfc	dtoa@n+6,f,c
   1135  001066  223D               	addwfc	dtoa@n+7,f,c
-  1136  001068                     l1439:
+  1136  001068                     l1449:
   1137                           
   1138                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 287:     if (!(prec 
       +                          < 0)) {
@@ -1221,26 +1221,26 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1147                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 290:     p = (0 < pr
       +                          ec) ? prec : 1;
   1148  00106E  BF65               	btfsc	(_prec+1)& (0+255),7,b
-  1149  001070  D005               	goto	u850
+  1149  001070  D005               	goto	u860
   1150  001072  5165               	movf	(_prec+1)& (0+255),w,b
-  1151  001074  E108               	bnz	l132
+  1151  001074  E108               	bnz	l136
   1152  001076  0564               	decf	_prec& (0+255),w,b
   1153  001078  B0D8               	btfsc	status,0,c
-  1154  00107A  D005               	goto	l132
-  1155  00107C                     u850:
+  1154  00107A  D005               	goto	l136
+  1155  00107C                     u860:
   1156                           
   1157                           ; BSR set to: 0
   1158  00107C  0E00               	movlw	0
   1159  00107E  6E31               	movwf	dtoa@p+1,c
   1160  001080  0E01               	movlw	1
   1161  001082  6E30               	movwf	dtoa@p,c
-  1162  001084  D004               	goto	l134
-  1163  001086                     l132:
+  1162  001084  D004               	goto	l138
+  1163  001086                     l136:
   1164                           
   1165                           ; BSR set to: 0
   1166  001086  C064  F030         	movff	_prec,dtoa@p
   1167  00108A  C065  F031         	movff	_prec+1,dtoa@p+1
-  1168  00108E                     l134:
+  1168  00108E                     l138:
   1169                           
   1170                           ; BSR set to: 0
   1171                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 291:     w = width;
@@ -1253,19 +1253,19 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1177  001096  5034               	movf	dtoa@s,w,c
   1178  001098  1035               	iorwf	dtoa@s+1,w,c
   1179  00109A  A4D8               	btfss	status,2,c
-  1180  00109C  D002               	goto	u870
+  1180  00109C  D002               	goto	u880
   1181                           
   1182                           ; BSR set to: 0
   1183  00109E  A45E               	btfss	_flags,2,c
-  1184  0010A0  D003               	goto	l1453
-  1185  0010A2                     u870:
+  1184  0010A0  D003               	goto	l1463
+  1185  0010A2                     u880:
   1186                           
   1187                           ; BSR set to: 0
   1188                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 293:         --w;
   1189  0010A2  0632               	decf	dtoa@w,f,c
   1190  0010A4  A0D8               	btfss	status,0,c
   1191  0010A6  0633               	decf	dtoa@w+1,f,c
-  1192  0010A8                     l1453:
+  1192  0010A8                     l1463:
   1193                           
   1194                           ; BSR set to: 0
   1195                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 297:     i = sizeof(
@@ -1283,8 +1283,8 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1205                           
   1206                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 299:     while (!(i 
       +                          < 1) && (n || (0 < p) || ((0 < w) && (flags & (1 << 1))))) {
-  1207  0010B4  D07C               	goto	l1467
-  1208  0010B6                     l1457:
+  1207  0010B4  D07C               	goto	l1477
+  1208  0010B6                     l1467:
   1209                           
   1210                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 300:         --i;
   1211  0010B6  063E               	decf	dtoa@i,f,c
@@ -1384,18 +1384,18 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1303  0011A2  C006  F03B         	movff	?___aodiv+5,dtoa@n+5
   1304  0011A6  C007  F03C         	movff	?___aodiv+6,dtoa@n+6
   1305  0011AA  C008  F03D         	movff	?___aodiv+7,dtoa@n+7
-  1306  0011AE                     l1467:
+  1306  0011AE                     l1477:
   1307                           
   1308                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 299:     while (!(i 
       +                          < 1) && (n || (0 < p) || ((0 < w) && (flags & (1 << 1))))) {
   1309  0011AE  BE3F               	btfsc	dtoa@i+1,7,c
-  1310  0011B0  D01F               	goto	u920
+  1310  0011B0  D01F               	goto	u930
   1311  0011B2  503F               	movf	dtoa@i+1,w,c
-  1312  0011B4  E103               	bnz	u880
+  1312  0011B4  E103               	bnz	u890
   1313  0011B6  043E               	decf	dtoa@i,w,c
   1314  0011B8  A0D8               	btfss	status,0,c
-  1315  0011BA  D01A               	goto	u920
-  1316  0011BC                     u880:
+  1315  0011BA  D01A               	goto	u930
+  1316  0011BC                     u890:
   1317  0011BC  5036               	movf	dtoa@n,w,c
   1318  0011BE  1037               	iorwf	dtoa@n+1,w,c
   1319  0011C0  1038               	iorwf	dtoa@n+2,w,c
@@ -1405,37 +1405,37 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1323  0011C8  103C               	iorwf	dtoa@n+6,w,c
   1324  0011CA  103D               	iorwf	dtoa@n+7,w,c
   1325  0011CC  A4D8               	btfss	status,2,c
-  1326  0011CE  D773               	goto	l1457
+  1326  0011CE  D773               	goto	l1467
   1327  0011D0  BE31               	btfsc	dtoa@p+1,7,c
-  1328  0011D2  D005               	goto	u900
+  1328  0011D2  D005               	goto	u910
   1329  0011D4  5031               	movf	dtoa@p+1,w,c
-  1330  0011D6  E102               	bnz	u901
+  1330  0011D6  E102               	bnz	u911
   1331  0011D8  0430               	decf	dtoa@p,w,c
   1332  0011DA  B0D8               	btfsc	status,0,c
-  1333  0011DC                     u901:
-  1334  0011DC  D76C               	goto	l1457
-  1335  0011DE                     u900:
+  1333  0011DC                     u911:
+  1334  0011DC  D76C               	goto	l1467
+  1335  0011DE                     u910:
   1336  0011DE  BE33               	btfsc	dtoa@w+1,7,c
-  1337  0011E0  D007               	goto	u920
+  1337  0011E0  D007               	goto	u930
   1338  0011E2  5033               	movf	dtoa@w+1,w,c
-  1339  0011E4  E103               	bnz	u910
+  1339  0011E4  E103               	bnz	u920
   1340  0011E6  0432               	decf	dtoa@w,w,c
   1341  0011E8  A0D8               	btfss	status,0,c
-  1342  0011EA  D002               	goto	u920
-  1343  0011EC                     u910:
+  1342  0011EA  D002               	goto	u930
+  1343  0011EC                     u920:
   1344  0011EC  B25E               	btfsc	_flags,1,c
-  1345  0011EE  D763               	goto	l1457
-  1346  0011F0                     u920:
+  1345  0011EE  D763               	goto	l1467
+  1346  0011F0                     u930:
   1347                           
   1348                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 308:     if (s || (f
       +                          lags & (1 << 2))) {
   1349  0011F0  5034               	movf	dtoa@s,w,c
   1350  0011F2  1035               	iorwf	dtoa@s+1,w,c
   1351  0011F4  A4D8               	btfss	status,2,c
-  1352  0011F6  D002               	goto	u940
+  1352  0011F6  D002               	goto	u950
   1353  0011F8  A45E               	btfss	_flags,2,c
-  1354  0011FA  D017               	goto	l1491
-  1355  0011FC                     u940:
+  1354  0011FA  D017               	goto	l1501
+  1355  0011FC                     u950:
   1356                           
   1357                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 309:         --i;
   1358  0011FC  063E               	decf	dtoa@i,f,c
@@ -1447,12 +1447,12 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1363  001202  5034               	movf	dtoa@s,w,c
   1364  001204  1035               	iorwf	dtoa@s+1,w,c
   1365  001206  A4D8               	btfss	status,2,c
-  1366  001208  D004               	goto	l1487
+  1366  001208  D004               	goto	l1497
   1367  00120A  0E00               	movlw	0
   1368  00120C  6E2F               	movwf	_dtoa$200+1,c
   1369  00120E  0E2B               	movlw	43
   1370  001210  D003               	goto	L1
-  1371  001212                     l1487:
+  1371  001212                     l1497:
   1372  001212  0E00               	movlw	0
   1373  001214  6E2F               	movwf	_dtoa$200+1,c
   1374  001216  0E2D               	movlw	45
@@ -1465,7 +1465,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1381  001222  203F               	addwfc	dtoa@i+1,w,c
   1382  001224  6EDA               	movwf	fsr2h,c
   1383  001226  C02E  FFDF         	movff	_dtoa$200,indf2
-  1384  00122A                     l1491:
+  1384  00122A                     l1501:
   1385                           
   1386                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 314:     return pad(
       +                          fp, &dbuf[i], w);
@@ -1542,7 +1542,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1448                           
   1449                           ;incstack = 0
   1450  0017AA  A05E               	btfss	_flags,0,c
-  1451  0017AC  D00A               	goto	l1331
+  1451  0017AC  D00A               	goto	l1341
   1452                           
   1453                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 78:         fputs((c
       +                          onst char *)buf, fp);
@@ -1551,21 +1551,21 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1456  0017B6  C011  F00C         	movff	pad@fp,fputs@fp
   1457  0017BA  C012  F00D         	movff	pad@fp+1,fputs@fp+1
   1458  0017BE  ECED  F00C         	call	_fputs	;wreg free
-  1459  0017C2                     l1331:
+  1459  0017C2                     l1341:
   1460                           
   1461                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 82:     w = (p < 0) 
       +                          ? 0 : p;
   1462  0017C2  BE16               	btfsc	pad@p+1,7,c
-  1463  0017C4  D005               	goto	l1335
+  1463  0017C4  D005               	goto	l1345
   1464  0017C6  C015  F01A         	movff	pad@p,pad@w
   1465  0017CA  C016  F01B         	movff	pad@p+1,pad@w+1
-  1466  0017CE  D004               	goto	l121
-  1467  0017D0                     l1335:
+  1466  0017CE  D004               	goto	l125
+  1467  0017D0                     l1345:
   1468  0017D0  0E00               	movlw	0
   1469  0017D2  6E1B               	movwf	pad@w+1,c
   1470  0017D4  0E00               	movlw	0
   1471  0017D6  6E1A               	movwf	pad@w,c
-  1472  0017D8                     l121:
+  1472  0017D8                     l125:
   1473                           
   1474                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 83:     i = 0;
   1475  0017D8  0E00               	movlw	0
@@ -1575,8 +1575,8 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1479                           
   1480                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 84:     while (i < w
       +                          ) {
-  1481  0017E0  D00C               	goto	l1341
-  1482  0017E2                     l1337:
+  1481  0017E0  D00C               	goto	l1351
+  1482  0017E2                     l1347:
   1483                           
   1484                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 85:         fputc(' 
       +                          ', fp);
@@ -1591,7 +1591,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1493                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 86:         ++i;
   1494  0017F6  4A18               	infsnz	pad@i,f,c
   1495  0017F8  2A19               	incf	pad@i+1,f,c
-  1496  0017FA                     l1341:
+  1496  0017FA                     l1351:
   1497                           
   1498                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 84:     while (i < w
       +                          ) {
@@ -1604,12 +1604,12 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1505  001806  0A80               	xorlw	128
   1506  001808  5817               	subwfb	??_pad& (0+255),w,c
   1507  00180A  A0D8               	btfss	status,0,c
-  1508  00180C  D7EA               	goto	l1337
+  1508  00180C  D7EA               	goto	l1347
   1509                           
   1510                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 90:     if (!(flags 
       +                          & (1 << 0))) {
   1511  00180E  B05E               	btfsc	_flags,0,c
-  1512  001810  D00A               	goto	l1345
+  1512  001810  D00A               	goto	l1355
   1513                           
   1514                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 91:         fputs((c
       +                          onst char *)buf, fp);
@@ -1618,7 +1618,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1517  00181A  C011  F00C         	movff	pad@fp,fputs@fp
   1518  00181E  C012  F00D         	movff	pad@fp+1,fputs@fp+1
   1519  001822  ECED  F00C         	call	_fputs	;wreg free
-  1520  001826                     l1345:
+  1520  001826                     l1355:
   1521                           
   1522                           ;/Applications/microchip/xc8/v2.05/pic/sources/c99/common/doprnt.c: 94:     return strle
       +                          n(buf) + w;
@@ -1680,16 +1680,16 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1573                           ;incstack = 0
   1574  001A78  C001  F003         	movff	strlen@s,strlen@a
   1575  001A7C  C002  F004         	movff	strlen@s+1,strlen@a+1
-  1576  001A80  D002               	goto	l1321
-  1577  001A82                     l1319:
+  1576  001A80  D002               	goto	l1331
+  1577  001A82                     l1329:
   1578  001A82  4A01               	infsnz	strlen@s,f,c
   1579  001A84  2A02               	incf	strlen@s+1,f,c
-  1580  001A86                     l1321:
+  1580  001A86                     l1331:
   1581  001A86  C001  FFD9         	movff	strlen@s,fsr2l
   1582  001A8A  C002  FFDA         	movff	strlen@s+1,fsr2h
   1583  001A8E  50DF               	movf	indf2,w,c
   1584  001A90  A4D8               	btfss	status,2,c
-  1585  001A92  D7F7               	goto	l1319
+  1585  001A92  D7F7               	goto	l1329
   1586  001A94  5003               	movf	strlen@a,w,c
   1587  001A96  5C01               	subwf	strlen@s,w,c
   1588  001A98  6E01               	movwf	?_strlen,c
@@ -1750,8 +1750,8 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1638  0019DC  6E10               	movwf	fputs@i+1,c
   1639  0019DE  0E00               	movlw	0
   1640  0019E0  6E0F               	movwf	fputs@i,c
-  1641  0019E2  D00B               	goto	l1315
-  1642  0019E4                     l1311:
+  1641  0019E2  D00B               	goto	l1325
+  1642  0019E4                     l1321:
   1643  0019E4  C00E  F001         	movff	fputs@c,fputc@c
   1644  0019E8  6A02               	clrf	fputc@c+1,c
   1645  0019EA  C00C  F003         	movff	fputs@fp,fputc@fp
@@ -1759,7 +1759,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1647  0019F2  EC85  F00B         	call	_fputc	;wreg free
   1648  0019F6  4A0F               	infsnz	fputs@i,f,c
   1649  0019F8  2A10               	incf	fputs@i+1,f,c
-  1650  0019FA                     l1315:
+  1650  0019FA                     l1325:
   1651  0019FA  500F               	movf	fputs@i,w,c
   1652  0019FC  240A               	addwf	fputs@s,w,c
   1653  0019FE  6ED9               	movwf	fsr2l,c
@@ -1771,7 +1771,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1659  001A0A  500E               	movf	fputs@c,w,c
   1660  001A0C  B4D8               	btfsc	status,2,c
   1661  001A0E  0012               	return	
-  1662  001A10  D7E9               	goto	l1311
+  1662  001A10  D7E9               	goto	l1321
   1663  001A12                     __end_of_fputs:
   1664                           	opt callstack 0
   1665                           
@@ -1824,16 +1824,16 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1707  00170A  5003               	movf	fputc@fp,w,c
   1708  00170C  1004               	iorwf	fputc@fp+1,w,c
   1709  00170E  B4D8               	btfsc	status,2,c
-  1710  001710  D004               	goto	u580
+  1710  001710  D004               	goto	u590
   1711  001712  5003               	movf	fputc@fp,w,c
   1712  001714  1004               	iorwf	fputc@fp+1,w,c
   1713  001716  A4D8               	btfss	status,2,c
-  1714  001718  D004               	goto	l1301
-  1715  00171A                     u580:
+  1714  001718  D004               	goto	l1311
+  1715  00171A                     u590:
   1716  00171A  5001               	movf	fputc@c,w,c
   1717  00171C  EC73  F00D         	call	_putch
   1718  001720  0012               	return	
-  1719  001722                     l1301:
+  1719  001722                     l1311:
   1720  001722  EE20 F004          	lfsr	2,4
   1721  001726  5003               	movf	fputc@fp,w,c
   1722  001728  26D9               	addwf	fsr2l,f,c
@@ -1842,7 +1842,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1725  00172E  50DE               	movf	postinc2,w,c
   1726  001730  10DE               	iorwf	postinc2,w,c
   1727  001732  B4D8               	btfsc	status,2,c
-  1728  001734  D016               	goto	u600
+  1728  001734  D016               	goto	u610
   1729  001736  EE20 F004          	lfsr	2,4
   1730  00173A  5003               	movf	fputc@fp,w,c
   1731  00173C  26D9               	addwf	fsr2l,f,c
@@ -1863,7 +1863,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1746  00175C  5809               	subwfb	(??_fputc+4)& (0+255),w,c
   1747  00175E  B0D8               	btfsc	status,0,c
   1748  001760  0012               	return	
-  1749  001762                     u600:
+  1749  001762                     u610:
   1750  001762  EE20 F002          	lfsr	2,2
   1751  001766  5003               	movf	fputc@fp,w,c
   1752  001768  26D9               	addwf	fsr2l,f,c
@@ -1981,13 +1981,13 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1854                           
   1855                           ;incstack = 0
   1856  001A46  BE14               	btfsc	abs@a+1,7,c
-  1857  001A48  D005               	goto	u670
+  1857  001A48  D005               	goto	u680
   1858  001A4A  5014               	movf	abs@a+1,w,c
-  1859  001A4C  E110               	bnz	l844
+  1859  001A4C  E110               	bnz	l848
   1860  001A4E  0413               	decf	abs@a,w,c
   1861  001A50  B0D8               	btfsc	status,0,c
-  1862  001A52  D00D               	goto	l844
-  1863  001A54                     u670:
+  1862  001A52  D00D               	goto	l848
+  1863  001A54                     u680:
   1864  001A54  C013  F015         	movff	abs@a,??_abs
   1865  001A58  C014  F016         	movff	abs@a+1,??_abs+1
   1866  001A5C  1E15               	comf	??_abs,f,c
@@ -1997,7 +1997,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1870  001A64  C015  F013         	movff	??_abs,?_abs
   1871  001A68  C016  F014         	movff	??_abs+1,?_abs+1
   1872  001A6C  0012               	return	
-  1873  001A6E                     l844:
+  1873  001A6E                     l848:
   1874  001A6E  C013  F013         	movff	abs@a,?_abs
   1875  001A72  C014  F014         	movff	abs@a+1,?_abs+1
   1876  001A76  0012               	return		;funcret
@@ -2050,7 +2050,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1918  00151E  0E00               	movlw	0
   1919  001520  6E12               	movwf	___aomod@sign,c
   1920  001522  AE08               	btfss	___aomod@dividend+7,7,c
-  1921  001524  D012               	goto	l1405
+  1921  001524  D012               	goto	l1415
   1922  001526  1E08               	comf	___aomod@dividend+7,f,c
   1923  001528  1E07               	comf	___aomod@dividend+6,f,c
   1924  00152A  1E06               	comf	___aomod@dividend+5,f,c
@@ -2069,9 +2069,9 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1937  001544  2208               	addwfc	___aomod@dividend+7,f,c
   1938  001546  0E01               	movlw	1
   1939  001548  6E12               	movwf	___aomod@sign,c
-  1940  00154A                     l1405:
+  1940  00154A                     l1415:
   1941  00154A  AE10               	btfss	___aomod@divisor+7,7,c
-  1942  00154C  D010               	goto	l1409
+  1942  00154C  D010               	goto	l1419
   1943  00154E  1E10               	comf	___aomod@divisor+7,f,c
   1944  001550  1E0F               	comf	___aomod@divisor+6,f,c
   1945  001552  1E0E               	comf	___aomod@divisor+5,f,c
@@ -2088,7 +2088,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1956  001568  220E               	addwfc	___aomod@divisor+5,f,c
   1957  00156A  220F               	addwfc	___aomod@divisor+6,f,c
   1958  00156C  2210               	addwfc	___aomod@divisor+7,f,c
-  1959  00156E                     l1409:
+  1959  00156E                     l1419:
   1960  00156E  5009               	movf	___aomod@divisor,w,c
   1961  001570  100A               	iorwf	___aomod@divisor+1,w,c
   1962  001572  100B               	iorwf	___aomod@divisor+2,w,c
@@ -2098,11 +2098,11 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1966  00157A  100F               	iorwf	___aomod@divisor+6,w,c
   1967  00157C  1010               	iorwf	___aomod@divisor+7,w,c
   1968  00157E  B4D8               	btfsc	status,2,c
-  1969  001580  D03C               	goto	l1425
+  1969  001580  D03C               	goto	l1435
   1970  001582  0E01               	movlw	1
   1971  001584  6E11               	movwf	___aomod@counter,c
-  1972  001586  D00A               	goto	l1415
-  1973  001588                     l1413:
+  1972  001586  D00A               	goto	l1425
+  1973  001588                     l1423:
   1974  001588  90D8               	bcf	status,0,c
   1975  00158A  3609               	rlcf	___aomod@divisor,f,c
   1976  00158C  360A               	rlcf	___aomod@divisor+1,f,c
@@ -2113,10 +2113,10 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   1981  001596  360F               	rlcf	___aomod@divisor+6,f,c
   1982  001598  3610               	rlcf	___aomod@divisor+7,f,c
   1983  00159A  2A11               	incf	___aomod@counter,f,c
-  1984  00159C                     l1415:
+  1984  00159C                     l1425:
   1985  00159C  AE10               	btfss	___aomod@divisor+7,7,c
-  1986  00159E  D7F4               	goto	l1413
-  1987  0015A0                     u780:
+  1986  00159E  D7F4               	goto	l1423
+  1987  0015A0                     u790:
   1988  0015A0  5009               	movf	___aomod@divisor,w,c
   1989  0015A2  5C01               	subwf	___aomod@dividend,w,c
   1990  0015A4  500A               	movf	___aomod@divisor+1,w,c
@@ -2134,7 +2134,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   2002  0015BC  5010               	movf	___aomod@divisor+7,w,c
   2003  0015BE  5808               	subwfb	___aomod@dividend+7,w,c
   2004  0015C0  A0D8               	btfss	status,0,c
-  2005  0015C2  D010               	goto	l1421
+  2005  0015C2  D010               	goto	l1431
   2006  0015C4  5009               	movf	___aomod@divisor,w,c
   2007  0015C6  5E01               	subwf	___aomod@dividend,f,c
   2008  0015C8  500A               	movf	___aomod@divisor+1,w,c
@@ -2151,7 +2151,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   2019  0015DE  5A07               	subwfb	___aomod@dividend+6,f,c
   2020  0015E0  5010               	movf	___aomod@divisor+7,w,c
   2021  0015E2  5A08               	subwfb	___aomod@dividend+7,f,c
-  2022  0015E4                     l1421:
+  2022  0015E4                     l1431:
   2023  0015E4  90D8               	bcf	status,0,c
   2024  0015E6  3210               	rrcf	___aomod@divisor+7,f,c
   2025  0015E8  320F               	rrcf	___aomod@divisor+6,f,c
@@ -2162,11 +2162,11 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   2030  0015F2  320A               	rrcf	___aomod@divisor+1,f,c
   2031  0015F4  3209               	rrcf	___aomod@divisor,f,c
   2032  0015F6  2E11               	decfsz	___aomod@counter,f,c
-  2033  0015F8  D7D3               	goto	u780
-  2034  0015FA                     l1425:
+  2033  0015F8  D7D3               	goto	u790
+  2034  0015FA                     l1435:
   2035  0015FA  5012               	movf	___aomod@sign,w,c
   2036  0015FC  B4D8               	btfsc	status,2,c
-  2037  0015FE  D010               	goto	l1429
+  2037  0015FE  D010               	goto	l1439
   2038  001600  1E08               	comf	___aomod@dividend+7,f,c
   2039  001602  1E07               	comf	___aomod@dividend+6,f,c
   2040  001604  1E06               	comf	___aomod@dividend+5,f,c
@@ -2183,7 +2183,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   2051  00161A  2206               	addwfc	___aomod@dividend+5,f,c
   2052  00161C  2207               	addwfc	___aomod@dividend+6,f,c
   2053  00161E  2208               	addwfc	___aomod@dividend+7,f,c
-  2054  001620                     l1429:
+  2054  001620                     l1439:
   2055  001620  C001  F001         	movff	___aomod@dividend,?___aomod
   2056  001624  C002  F002         	movff	___aomod@dividend+1,?___aomod+1
   2057  001628  C003  F003         	movff	___aomod@dividend+2,?___aomod+2
@@ -2243,7 +2243,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   2106  0013D6  0E00               	movlw	0
   2107  0013D8  6E12               	movwf	___aodiv@sign,c
   2108  0013DA  AE10               	btfss	___aodiv@divisor+7,7,c
-  2109  0013DC  D012               	goto	l1361
+  2109  0013DC  D012               	goto	l1371
   2110  0013DE  1E10               	comf	___aodiv@divisor+7,f,c
   2111  0013E0  1E0F               	comf	___aodiv@divisor+6,f,c
   2112  0013E2  1E0E               	comf	___aodiv@divisor+5,f,c
@@ -2262,9 +2262,9 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   2125  0013FC  2210               	addwfc	___aodiv@divisor+7,f,c
   2126  0013FE  0E01               	movlw	1
   2127  001400  6E12               	movwf	___aodiv@sign,c
-  2128  001402                     l1361:
+  2128  001402                     l1371:
   2129  001402  AE08               	btfss	___aodiv@dividend+7,7,c
-  2130  001404  D012               	goto	l1367
+  2130  001404  D012               	goto	l1377
   2131  001406  1E08               	comf	___aodiv@dividend+7,f,c
   2132  001408  1E07               	comf	___aodiv@dividend+6,f,c
   2133  00140A  1E06               	comf	___aodiv@dividend+5,f,c
@@ -2283,13 +2283,13 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   2146  001424  2208               	addwfc	___aodiv@dividend+7,f,c
   2147  001426  0E01               	movlw	1
   2148  001428  1A12               	xorwf	___aodiv@sign,f,c
-  2149  00142A                     l1367:
+  2149  00142A                     l1377:
   2150  00142A  EE20  F013         	lfsr	2,___aodiv@quotient
   2151  00142E  0E07               	movlw	7
-  2152  001430                     u701:
+  2152  001430                     u711:
   2153  001430  6ADE               	clrf	postinc2,c
   2154  001432  06E8               	decf	wreg,f,c
-  2155  001434  E2FD               	bc	u701
+  2155  001434  E2FD               	bc	u711
   2156  001436  5009               	movf	___aodiv@divisor,w,c
   2157  001438  100A               	iorwf	___aodiv@divisor+1,w,c
   2158  00143A  100B               	iorwf	___aodiv@divisor+2,w,c
@@ -2299,11 +2299,11 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   2162  001442  100F               	iorwf	___aodiv@divisor+6,w,c
   2163  001444  1010               	iorwf	___aodiv@divisor+7,w,c
   2164  001446  B4D8               	btfsc	status,2,c
-  2165  001448  D046               	goto	l1389
+  2165  001448  D046               	goto	l1399
   2166  00144A  0E01               	movlw	1
   2167  00144C  6E11               	movwf	___aodiv@counter,c
-  2168  00144E  D00A               	goto	l1375
-  2169  001450                     l1373:
+  2168  00144E  D00A               	goto	l1385
+  2169  001450                     l1383:
   2170  001450  90D8               	bcf	status,0,c
   2171  001452  3609               	rlcf	___aodiv@divisor,f,c
   2172  001454  360A               	rlcf	___aodiv@divisor+1,f,c
@@ -2314,10 +2314,10 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   2177  00145E  360F               	rlcf	___aodiv@divisor+6,f,c
   2178  001460  3610               	rlcf	___aodiv@divisor+7,f,c
   2179  001462  2A11               	incf	___aodiv@counter,f,c
-  2180  001464                     l1375:
+  2180  001464                     l1385:
   2181  001464  AE10               	btfss	___aodiv@divisor+7,7,c
-  2182  001466  D7F4               	goto	l1373
-  2183  001468                     u720:
+  2182  001466  D7F4               	goto	l1383
+  2183  001468                     u730:
   2184  001468  90D8               	bcf	status,0,c
   2185  00146A  3613               	rlcf	___aodiv@quotient,f,c
   2186  00146C  3614               	rlcf	___aodiv@quotient+1,f,c
@@ -2344,7 +2344,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   2207  001496  5010               	movf	___aodiv@divisor+7,w,c
   2208  001498  5808               	subwfb	___aodiv@dividend+7,w,c
   2209  00149A  A0D8               	btfss	status,0,c
-  2210  00149C  D011               	goto	l1385
+  2210  00149C  D011               	goto	l1395
   2211  00149E  5009               	movf	___aodiv@divisor,w,c
   2212  0014A0  5E01               	subwf	___aodiv@dividend,f,c
   2213  0014A2  500A               	movf	___aodiv@divisor+1,w,c
@@ -2362,7 +2362,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   2225  0014BA  5010               	movf	___aodiv@divisor+7,w,c
   2226  0014BC  5A08               	subwfb	___aodiv@dividend+7,f,c
   2227  0014BE  8013               	bsf	___aodiv@quotient,0,c
-  2228  0014C0                     l1385:
+  2228  0014C0                     l1395:
   2229  0014C0  90D8               	bcf	status,0,c
   2230  0014C2  3210               	rrcf	___aodiv@divisor+7,f,c
   2231  0014C4  320F               	rrcf	___aodiv@divisor+6,f,c
@@ -2373,11 +2373,11 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   2236  0014CE  320A               	rrcf	___aodiv@divisor+1,f,c
   2237  0014D0  3209               	rrcf	___aodiv@divisor,f,c
   2238  0014D2  2E11               	decfsz	___aodiv@counter,f,c
-  2239  0014D4  D7C9               	goto	u720
-  2240  0014D6                     l1389:
+  2239  0014D4  D7C9               	goto	u730
+  2240  0014D6                     l1399:
   2241  0014D6  5012               	movf	___aodiv@sign,w,c
   2242  0014D8  B4D8               	btfsc	status,2,c
-  2243  0014DA  D010               	goto	l1393
+  2243  0014DA  D010               	goto	l1403
   2244  0014DC  1E1A               	comf	___aodiv@quotient+7,f,c
   2245  0014DE  1E19               	comf	___aodiv@quotient+6,f,c
   2246  0014E0  1E18               	comf	___aodiv@quotient+5,f,c
@@ -2394,7 +2394,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   2257  0014F6  2218               	addwfc	___aodiv@quotient+5,f,c
   2258  0014F8  2219               	addwfc	___aodiv@quotient+6,f,c
   2259  0014FA  221A               	addwfc	___aodiv@quotient+7,f,c
-  2260  0014FC                     l1393:
+  2260  0014FC                     l1403:
   2261  0014FC  C013  F001         	movff	___aodiv@quotient,?___aodiv
   2262  001500  C014  F002         	movff	___aodiv@quotient+1,?___aodiv+1
   2263  001504  C015  F003         	movff	___aodiv@quotient+2,?___aodiv+2
@@ -2634,12 +2634,12 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   2487                           ;LCD8.c: 42: void LCD8send(char c, char mode);LCD8.c: 43: {;LCD8.c: 44:  LATHbits.LATH2 
       +                          = mode;
   2488  0019A2  B006               	btfsc	LCD8send@mode,0,c
-  2489  0019A4  D002               	bra	u1025
+  2489  0019A4  D002               	bra	u1035
   2490  0019A6  9490               	bcf	3984,2,c	;volatile
-  2491  0019A8  D001               	bra	u1026
-  2492  0019AA                     u1025:
+  2491  0019A8  D001               	bra	u1036
+  2492  0019AA                     u1035:
   2493  0019AA  8490               	bsf	3984,2,c	;volatile
-  2494  0019AC                     u1026:
+  2494  0019AC                     u1036:
   2495                           
   2496                           ;LCD8.c: 45:  delay_ms(1);
   2497  0019AC  0E00               	movlw	0
@@ -2722,7 +2722,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   2568  001AA4  6E05               	movwf	delay_us@i+1,c
   2569  001AA6  0E00               	movlw	0
   2570  001AA8  6E04               	movwf	delay_us@i,c
-  2571  001AAA  D005               	goto	l1505
+  2571  001AAA  D005               	goto	l1515
   2572  001AAC                     l28:
   2573                           
   2574                           ;delay.c: 18:  {;delay.c: 19:         _delay((unsigned long)((1)*(25000000/4000000.0)));
@@ -2733,7 +2733,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   2579                           ;delay.c: 20:     }
   2580  001AB2  4A04               	infsnz	delay_us@i,f,c
   2581  001AB4  2A05               	incf	delay_us@i+1,f,c
-  2582  001AB6                     l1505:
+  2582  001AB6                     l1515:
   2583  001AB6  5001               	movf	delay_us@x,w,c
   2584  001AB8  5C04               	subwf	delay_us@i,w,c
   2585  001ABA  5005               	movf	delay_us@i+1,w,c
@@ -2799,17 +2799,17 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   2639  001A16  0E00               	movlw	0
   2640  001A18  6E04               	movwf	delay_ms@i,c
   2641  001A1A  D00A               	goto	l21
-  2642  001A1C                     l1497:
+  2642  001A1C                     l1507:
   2643                           
   2644                           ;delay.c: 10:  {;delay.c: 11:         _delay((unsigned long)((1)*(25000000/4000.0)));
   2645  001A1C  0E09               	movlw	9
   2646  001A1E  6E03               	movwf	??_delay_ms& (0+255),c
   2647  001A20  0E1C               	movlw	28
-  2648  001A22                     u1137:
+  2648  001A22                     u1157:
   2649  001A22  2EE8               	decfsz	wreg,f,c
-  2650  001A24  D7FE               	bra	u1137
+  2650  001A24  D7FE               	bra	u1157
   2651  001A26  2E03               	decfsz	??_delay_ms& (0+255),f,c
-  2652  001A28  D7FC               	bra	u1137
+  2652  001A28  D7FC               	bra	u1157
   2653  001A2A  D000               	nop2	
   2654                           
   2655                           ;delay.c: 12:     }
@@ -2826,7 +2826,7 @@ Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1
   2666  001A3E  5803               	subwfb	??_delay_ms& (0+255),w,c
   2667  001A40  B0D8               	btfsc	status,0,c
   2668  001A42  0012               	return	
-  2669  001A44  D7EB               	goto	l1497
+  2669  001A44  D7EB               	goto	l1507
   2670  001A46                     __end_of_delay_ms:
   2671                           	opt callstack 0
   2672                           
@@ -3047,7 +3047,7 @@ Call Graph Tables:
  ---------------------------------------------------------------------------------
  (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
  ---------------------------------------------------------------------------------
- (0) _main                                                28    28      0   11552
+ (0) _main                                                28    28      0   11628
                                              10 BANK0     28    28      0
                            _LCD8init
                            _LCD8send
@@ -3107,7 +3107,7 @@ Call Graph Tables:
                            _LCD8send
                            _delay_ms
  ---------------------------------------------------------------------------------
- (1) _LCD8send                                             2     1      1    2264
+ (1) _LCD8send                                             2     1      1    2340
                                               5 COMRAM     2     1      1
                            _delay_ms
                            _delay_us
@@ -3115,7 +3115,7 @@ Call Graph Tables:
  (2) _delay_us                                             5     3      2     198
                                               0 COMRAM     5     3      2
  ---------------------------------------------------------------------------------
- (2) _delay_ms                                             5     3      2     426
+ (2) _delay_ms                                             5     3      2     350
                                               0 COMRAM     5     3      2
  ---------------------------------------------------------------------------------
  Estimated maximum stack depth 6
@@ -3200,33 +3200,33 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.05 build -831301201 
-Symbol Table                                                                                   Mon Apr 22 16:22:22 2019
+Symbol Table                                                                                   Mon Jul 15 14:02:07 2019
 
-                     l21 1A30                       l28 1AAC                      l121 17D8  
-                    l132 1086                      l134 108E                      l844 1A6E  
-                    u600 1762                      u701 1430                      u720 1468  
-                    u810 103A                      u580 171A                      u900 11DE  
-                    u820 103C                      u901 11DC                      u670 1A54  
-                    u910 11EC                      u920 11F0                      u850 107C  
-                    u780 15A0                      u940 11FC                      u870 10A2  
-                    u880 11BC                      _abs 1A46                      _pad 17AA  
+                     l21 1A30                       l28 1AAC                      l125 17D8  
+                    l136 1086                      l138 108E                      l848 1A6E  
+                    u610 1762                      u711 1430                      u730 1468  
+                    u820 103A                      u590 171A                      u910 11DE  
+                    u830 103C                      u911 11DC                      u680 1A54  
+                    u920 11EC                      u930 11F0                      u860 107C  
+                    u790 15A0                      u950 11FC                      u880 10A2  
+                    u890 11BC                      _abs 1A46                      _pad 17AA  
                     wreg 000FE8             __CFG_FOSC$HS 000000             __CFG_WDT$OFF 000000  
-                   ?_abs 0013                     l1301 1722                     l1311 19E4  
-                   l1321 1A86                     l1315 19FA                     l1331 17C2  
-                   l1421 15E4                     l1413 1588                     l1405 154A  
-                   l1341 17FA                     l1415 159C                     l1319 1A82  
-                   l1335 17D0                     l1505 1AB6                     l1361 1402  
-                   l1425 15FA                     l1409 156E                     l1345 1826  
-                   l1337 17E2                     l1531 1380                     l1373 1450  
-                   l1429 1620                     l1453 10A8                     l1525 1344  
-                   l1541 13A2                     l1375 1464                     l1367 142A  
-                   l1439 1068                     l1535 138A                     l1631 187E  
-                   l1393 14FC                     l1385 14C0                     l1457 10B6  
-                   l1491 122A                     l1467 11AE                     l1563 18CE  
-                   l1635 189A                     l1389 14D6                     l1565 18F4  
-                   l1487 1212                     l1497 1A1C                     ?_pad 0011  
-                   STR_1 1001                     u1000 12C6                     u1025 19AA  
-                   u1041 184A                     u1026 19AC                     u1137 1A22  
+                   ?_abs 0013                     l1311 1722                     l1321 19E4  
+                   l1403 14FC                     l1331 1A86                     l1325 19FA  
+                   l1341 17C2                     l1501 122A                     l1431 15E4  
+                   l1423 1588                     l1415 154A                     l1351 17FA  
+                   l1425 159C                     l1329 1A82                     l1345 17D0  
+                   l1507 1A1C                     l1515 1AB6                     l1371 1402  
+                   l1435 15FA                     l1419 156E                     l1355 1826  
+                   l1347 17E2                     l1541 1380                     l1383 1450  
+                   l1439 1620                     l1463 10A8                     l1535 1344  
+                   l1551 13A2                     l1385 1464                     l1377 142A  
+                   l1449 1068                     l1545 138A                     l1641 187E  
+                   l1395 14C0                     l1467 10B6                     l1477 11AE  
+                   l1573 18CE                     l1645 189A                     l1399 14D6  
+                   l1575 18F4                     l1497 1212                     ?_pad 0011  
+                   STR_1 1001                     u1010 12C6                     u1035 19AA  
+                   u1051 184A                     u1036 19AC                     u1157 1A22  
                    _LATD 000F8C                     _LATE 000F8D                     abs@a 0013  
                    _dbuf 0066                     _main 1840                     _dtoa 1012  
                    _prec 0064                     _nout 0060                     pad@i 0018  

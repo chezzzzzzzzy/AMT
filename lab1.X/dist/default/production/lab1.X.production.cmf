@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$/tmp/xcYYFHN3c.o
+$/tmp/xc6AfhT1r.o
 init CODE 0 0 0 4 1
 config CONFIG 0 1FFF8 1FFF8 6 1
 $dist/default/production/lab1.X.production.o
@@ -90,48 +90,48 @@ MEDIUMCONST 11000-1FFF7 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production/lab1.X.production.o
-1A12 text16 CODE >7:/Users/chester/Desktop/ET0720 - AMT/lab1.X/delay.c
-1A12 text16 CODE >9:/Users/chester/Desktop/ET0720 - AMT/lab1.X/delay.c
-1A1C text16 CODE >11:/Users/chester/Desktop/ET0720 - AMT/lab1.X/delay.c
-1A2C text16 CODE >12:/Users/chester/Desktop/ET0720 - AMT/lab1.X/delay.c
-1AA2 text15 CODE >15:/Users/chester/Desktop/ET0720 - AMT/lab1.X/delay.c
-1AA2 text15 CODE >17:/Users/chester/Desktop/ET0720 - AMT/lab1.X/delay.c
-1AAC text15 CODE >19:/Users/chester/Desktop/ET0720 - AMT/lab1.X/delay.c
-1AB2 text15 CODE >20:/Users/chester/Desktop/ET0720 - AMT/lab1.X/delay.c
-19A0 text14 CODE >42:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-19A2 text14 CODE >44:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-19AC text14 CODE >45:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-19B8 text14 CODE >47:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-19BC text14 CODE >48:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-19BE text14 CODE >49:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-19CA text14 CODE >50:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-19CC text14 CODE >51:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-19D8 text14 CODE >52:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-1642 text13 CODE >11:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-1642 text13 CODE >13:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-1646 text13 CODE >14:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-164A text13 CODE >15:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-164C text13 CODE >16:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-164E text13 CODE >17:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-1650 text13 CODE >18:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-165C text13 CODE >20:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-1666 text13 CODE >21:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-1670 text13 CODE >22:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-167A text13 CODE >23:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-1684 text13 CODE >24:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-168E text13 CODE >25:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-1698 text13 CODE >26:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-16A2 text13 CODE >27:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-16AC text13 CODE >28:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-16B8 text13 CODE >30:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-16C2 text13 CODE >32:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-16CC text13 CODE >33:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-16D6 text13 CODE >34:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-16E0 text13 CODE >35:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-16EA text13 CODE >36:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-16F4 text13 CODE >38:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-16FE text13 CODE >39:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
-1708 text13 CODE >40:/Users/chester/Desktop/ET0720 - AMT/lab1.X/LCD8.c
+1A12 text16 CODE >7:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/delay.c
+1A12 text16 CODE >9:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/delay.c
+1A1C text16 CODE >11:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/delay.c
+1A2C text16 CODE >12:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/delay.c
+1AA2 text15 CODE >15:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/delay.c
+1AA2 text15 CODE >17:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/delay.c
+1AAC text15 CODE >19:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/delay.c
+1AB2 text15 CODE >20:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/delay.c
+19A0 text14 CODE >42:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+19A2 text14 CODE >44:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+19AC text14 CODE >45:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+19B8 text14 CODE >47:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+19BC text14 CODE >48:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+19BE text14 CODE >49:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+19CA text14 CODE >50:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+19CC text14 CODE >51:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+19D8 text14 CODE >52:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+1642 text13 CODE >11:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+1642 text13 CODE >13:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+1646 text13 CODE >14:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+164A text13 CODE >15:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+164C text13 CODE >16:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+164E text13 CODE >17:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+1650 text13 CODE >18:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+165C text13 CODE >20:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+1666 text13 CODE >21:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+1670 text13 CODE >22:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+167A text13 CODE >23:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+1684 text13 CODE >24:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+168E text13 CODE >25:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+1698 text13 CODE >26:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+16A2 text13 CODE >27:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+16AC text13 CODE >28:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+16B8 text13 CODE >30:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+16C2 text13 CODE >32:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+16CC text13 CODE >33:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+16D6 text13 CODE >34:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+16E0 text13 CODE >35:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+16EA text13 CODE >36:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+16F4 text13 CODE >38:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+16FE text13 CODE >39:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
+1708 text13 CODE >40:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/LCD8.c
 13D6 text12 CODE >9:/Applications/microchip/xc8/v2.05/pic/sources/c99/common/aodiv.c
 13D6 text12 CODE >15:/Applications/microchip/xc8/v2.05/pic/sources/c99/common/aodiv.c
 13DA text12 CODE >16:/Applications/microchip/xc8/v2.05/pic/sources/c99/common/aodiv.c
@@ -275,47 +275,47 @@ $dist/default/production/lab1.X.production.o
 1932 text1 CODE >19:/Applications/microchip/xc8/v2.05/pic/sources/c99/common/nf_sprintf.c
 194E text1 CODE >20:/Applications/microchip/xc8/v2.05/pic/sources/c99/common/nf_sprintf.c
 1960 text1 CODE >23:/Applications/microchip/xc8/v2.05/pic/sources/c99/common/nf_sprintf.c
-1840 text0 CODE >20:/Users/chester/Desktop/ET0720 - AMT/lab1.X/lcd_sandbox.c
-1840 text0 CODE >22:/Users/chester/Desktop/ET0720 - AMT/lab1.X/lcd_sandbox.c
-1852 text0 CODE >27:/Users/chester/Desktop/ET0720 - AMT/lab1.X/lcd_sandbox.c
-1856 text0 CODE >29:/Users/chester/Desktop/ET0720 - AMT/lab1.X/lcd_sandbox.c
-1872 text0 CODE >32:/Users/chester/Desktop/ET0720 - AMT/lab1.X/lcd_sandbox.c
-187E text0 CODE >33:/Users/chester/Desktop/ET0720 - AMT/lab1.X/lcd_sandbox.c
-1894 text0 CODE >34:/Users/chester/Desktop/ET0720 - AMT/lab1.X/lcd_sandbox.c
-18AC text0 CODE >37:/Users/chester/Desktop/ET0720 - AMT/lab1.X/lcd_sandbox.c
-18B6 text0 CODE >42:/Users/chester/Desktop/ET0720 - AMT/lab1.X/lcd_sandbox.c
-1962 cinit CODE >3119:/tmp/xcQ1HV8Di
-1962 cinit CODE >3121:/tmp/xcQ1HV8Di
-1962 cinit CODE >3124:/tmp/xcQ1HV8Di
-1962 cinit CODE >3160:/tmp/xcQ1HV8Di
-1964 cinit CODE >3161:/tmp/xcQ1HV8Di
-1966 cinit CODE >3162:/tmp/xcQ1HV8Di
-1968 cinit CODE >3163:/tmp/xcQ1HV8Di
-196A cinit CODE >3164:/tmp/xcQ1HV8Di
-196C cinit CODE >3165:/tmp/xcQ1HV8Di
-196E cinit CODE >3166:/tmp/xcQ1HV8Di
-1972 cinit CODE >3167:/tmp/xcQ1HV8Di
-1976 cinit CODE >3168:/tmp/xcQ1HV8Di
-1976 cinit CODE >3169:/tmp/xcQ1HV8Di
-1978 cinit CODE >3170:/tmp/xcQ1HV8Di
-197C cinit CODE >3171:/tmp/xcQ1HV8Di
-197E cinit CODE >3172:/tmp/xcQ1HV8Di
-1980 cinit CODE >3173:/tmp/xcQ1HV8Di
-1982 cinit CODE >3177:/tmp/xcQ1HV8Di
-1986 cinit CODE >3178:/tmp/xcQ1HV8Di
-1988 cinit CODE >3179:/tmp/xcQ1HV8Di
-1988 cinit CODE >3180:/tmp/xcQ1HV8Di
-198A cinit CODE >3181:/tmp/xcQ1HV8Di
-198C cinit CODE >3182:/tmp/xcQ1HV8Di
-198E cinit CODE >3185:/tmp/xcQ1HV8Di
-1990 cinit CODE >3186:/tmp/xcQ1HV8Di
-1992 cinit CODE >3192:/tmp/xcQ1HV8Di
-1992 cinit CODE >3195:/tmp/xcQ1HV8Di
-1994 cinit CODE >3196:/tmp/xcQ1HV8Di
-1996 cinit CODE >3197:/tmp/xcQ1HV8Di
-1998 cinit CODE >3198:/tmp/xcQ1HV8Di
-199A cinit CODE >3199:/tmp/xcQ1HV8Di
-199C cinit CODE >3200:/tmp/xcQ1HV8Di
+1840 text0 CODE >20:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/lcd_sandbox.c
+1840 text0 CODE >22:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/lcd_sandbox.c
+1852 text0 CODE >27:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/lcd_sandbox.c
+1856 text0 CODE >29:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/lcd_sandbox.c
+1872 text0 CODE >32:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/lcd_sandbox.c
+187E text0 CODE >33:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/lcd_sandbox.c
+1894 text0 CODE >34:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/lcd_sandbox.c
+18AC text0 CODE >37:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/lcd_sandbox.c
+18B6 text0 CODE >42:/Users/chester/Desktop/ET0720 - AMT/labs/lab1.X/lcd_sandbox.c
+1962 cinit CODE >3119:/tmp/xc64wXJBY
+1962 cinit CODE >3121:/tmp/xc64wXJBY
+1962 cinit CODE >3124:/tmp/xc64wXJBY
+1962 cinit CODE >3160:/tmp/xc64wXJBY
+1964 cinit CODE >3161:/tmp/xc64wXJBY
+1966 cinit CODE >3162:/tmp/xc64wXJBY
+1968 cinit CODE >3163:/tmp/xc64wXJBY
+196A cinit CODE >3164:/tmp/xc64wXJBY
+196C cinit CODE >3165:/tmp/xc64wXJBY
+196E cinit CODE >3166:/tmp/xc64wXJBY
+1972 cinit CODE >3167:/tmp/xc64wXJBY
+1976 cinit CODE >3168:/tmp/xc64wXJBY
+1976 cinit CODE >3169:/tmp/xc64wXJBY
+1978 cinit CODE >3170:/tmp/xc64wXJBY
+197C cinit CODE >3171:/tmp/xc64wXJBY
+197E cinit CODE >3172:/tmp/xc64wXJBY
+1980 cinit CODE >3173:/tmp/xc64wXJBY
+1982 cinit CODE >3177:/tmp/xc64wXJBY
+1986 cinit CODE >3178:/tmp/xc64wXJBY
+1988 cinit CODE >3179:/tmp/xc64wXJBY
+1988 cinit CODE >3180:/tmp/xc64wXJBY
+198A cinit CODE >3181:/tmp/xc64wXJBY
+198C cinit CODE >3182:/tmp/xc64wXJBY
+198E cinit CODE >3185:/tmp/xc64wXJBY
+1990 cinit CODE >3186:/tmp/xc64wXJBY
+1992 cinit CODE >3192:/tmp/xc64wXJBY
+1992 cinit CODE >3195:/tmp/xc64wXJBY
+1994 cinit CODE >3196:/tmp/xc64wXJBY
+1996 cinit CODE >3197:/tmp/xc64wXJBY
+1998 cinit CODE >3198:/tmp/xc64wXJBY
+199A cinit CODE >3199:/tmp/xc64wXJBY
+199C cinit CODE >3200:/tmp/xc64wXJBY
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -335,7 +335,7 @@ __Hspace_1 C6 0 ABS 0 - dist/default/production/lab1.X.production.o
 __Hspace_2 0 0 ABS 0 - dist/default/production/lab1.X.production.o
 __HidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production/lab1.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production/lab1.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst /tmp/xcYYFHN3c.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst /tmp/xc6AfhT1r.o
 ?_abs 13 0 COMRAM 1 cstackCOMRAM dist/default/production/lab1.X.production.o
 ?_pad 11 0 COMRAM 1 cstackCOMRAM dist/default/production/lab1.X.production.o
 main@i AA 0 BANK0 1 cstackBANK0 dist/default/production/lab1.X.production.o
@@ -343,7 +343,7 @@ main@i AA 0 BANK0 1 cstackBANK0 dist/default/production/lab1.X.production.o
 __Lsmallconst 1000 0 SMALLCONST 0 smallconst dist/default/production/lab1.X.production.o
 _LATD F8C 0 ABS 0 - dist/default/production/lab1.X.production.o
 _LATE F8D 0 ABS 0 - dist/default/production/lab1.X.production.o
-___sp 0 0 STACK 2 stack /tmp/xcYYFHN3c.o
+___sp 0 0 STACK 2 stack /tmp/xc6AfhT1r.o
 _dbuf 66 0 BANK0 1 bssBANK0 dist/default/production/lab1.X.production.o
 _dtoa 1012 0 CODE 0 text4 dist/default/production/lab1.X.production.o
 _main 1840 0 CODE 0 text0 dist/default/production/lab1.X.production.o
@@ -353,7 +353,7 @@ abs@a 13 0 COMRAM 1 cstackCOMRAM dist/default/production/lab1.X.production.o
 pad@i 18 0 COMRAM 1 cstackCOMRAM dist/default/production/lab1.X.production.o
 pad@p 15 0 COMRAM 1 cstackCOMRAM dist/default/production/lab1.X.production.o
 pad@w 1A 0 COMRAM 1 cstackCOMRAM dist/default/production/lab1.X.production.o
-start 0 0 CODE 0 init /tmp/xcYYFHN3c.o
+start 0 0 CODE 0 init /tmp/xc6AfhT1r.o
 ___aomod@counter 11 0 COMRAM 1 cstackCOMRAM dist/default/production/lab1.X.production.o
 __size_of___aodiv 0 0 ABS 0 - dist/default/production/lab1.X.production.o
 __size_of___aomod 0 0 ABS 0 - dist/default/production/lab1.X.production.o
@@ -369,19 +369,19 @@ __end_of_vfpfcnvrt 13D6 0 CODE 0 text3 dist/default/production/lab1.X.production
 __end_of_LCD8init 170A 0 CODE 0 text13 dist/default/production/lab1.X.production.o
 __end_of_LCD8send 19DA 0 CODE 0 text14 dist/default/production/lab1.X.production.o
 __size_of_vfpfcnvrt 0 0 ABS 0 - dist/default/production/lab1.X.production.o
-__accesstop 60 0 ABS 0 - /tmp/xcYYFHN3c.o
-intlevel0 0 0 CODE 0 text /tmp/xcYYFHN3c.o
-intlevel1 0 0 CODE 0 text /tmp/xcYYFHN3c.o
-intlevel2 0 0 CODE 0 text /tmp/xcYYFHN3c.o
-intlevel3 0 0 CODE 0 text /tmp/xcYYFHN3c.o
+__accesstop 60 0 ABS 0 - /tmp/xc6AfhT1r.o
+intlevel0 0 0 CODE 0 text /tmp/xc6AfhT1r.o
+intlevel1 0 0 CODE 0 text /tmp/xc6AfhT1r.o
+intlevel2 0 0 CODE 0 text /tmp/xc6AfhT1r.o
+intlevel3 0 0 CODE 0 text /tmp/xc6AfhT1r.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/lab1.X.production.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/lab1.X.production.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/production/lab1.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production/lab1.X.production.o
 _vfpfcnvrt 1254 0 CODE 0 text3 dist/default/production/lab1.X.production.o
 dtoa@fp 1C 0 COMRAM 1 cstackCOMRAM dist/default/production/lab1.X.production.o
-___inthi_sp 0 0 STACK 2 stack /tmp/xcYYFHN3c.o
-___intlo_sp 0 0 STACK 2 stack /tmp/xcYYFHN3c.o
+___inthi_sp 0 0 STACK 2 stack /tmp/xc6AfhT1r.o
+___intlo_sp 0 0 STACK 2 stack /tmp/xc6AfhT1r.o
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production/lab1.X.production.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production/lab1.X.production.o
 main@msg 90 0 BANK0 1 cstackBANK0 dist/default/production/lab1.X.production.o
@@ -443,7 +443,7 @@ __Hbank14 0 0 ABS 0 bank14 dist/default/production/lab1.X.production.o
 __Hbank15 0 0 ABS 0 bank15 dist/default/production/lab1.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production/lab1.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production/lab1.X.production.o
-__smallconst 1000 0 SMALLCONST 0 smallconst /tmp/xcYYFHN3c.o
+__smallconst 1000 0 SMALLCONST 0 smallconst /tmp/xc6AfhT1r.o
 __end_of_sprintf 1962 0 CODE 0 text1 dist/default/production/lab1.X.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production/lab1.X.production.o
 __Hconfig 1FFFE 0 CONFIG 0 config dist/default/production/lab1.X.production.o
@@ -557,8 +557,8 @@ __Lfarbss 0 0 FARRAM 0 farbss dist/default/production/lab1.X.production.o
 _strlen 1A78 0 CODE 0 text6 dist/default/production/lab1.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production/lab1.X.production.o
 __size_of_vfprintf 0 0 ABS 0 - dist/default/production/lab1.X.production.o
-stackhi E7F 0 ABS 0 - /tmp/xcYYFHN3c.o
-stacklo C6 0 ABS 0 - /tmp/xcYYFHN3c.o
+stackhi E7F 0 ABS 0 - /tmp/xc6AfhT1r.o
+stacklo C6 0 ABS 0 - /tmp/xc6AfhT1r.o
 __Lintcode 0 0 CODE 0 intcode dist/default/production/lab1.X.production.o
 __Lintret 0 0 ABS 0 intret dist/default/production/lab1.X.production.o
 __Lirdata 0 0 CODE 0 irdata dist/default/production/lab1.X.production.o
@@ -618,7 +618,7 @@ __Ltext13 0 0 ABS 0 text13 dist/default/production/lab1.X.production.o
 __Ltext14 0 0 ABS 0 text14 dist/default/production/lab1.X.production.o
 __Ltext15 0 0 ABS 0 text15 dist/default/production/lab1.X.production.o
 __Ltext16 0 0 ABS 0 text16 dist/default/production/lab1.X.production.o
-__ramtop 1000 0 RAM 0 ramtop /tmp/xcYYFHN3c.o
+__ramtop 1000 0 RAM 0 ramtop /tmp/xc6AfhT1r.o
 _sprintf 1910 0 CODE 0 text1 dist/default/production/lab1.X.production.o
 _vfprintf 18BA 0 CODE 0 text2 dist/default/production/lab1.X.production.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production/lab1.X.production.o
@@ -664,7 +664,7 @@ _fputc 170A 0 CODE 0 text8 dist/default/production/lab1.X.production.o
 _fputs 19DA 0 CODE 0 text7 dist/default/production/lab1.X.production.o
 _putch 1AE6 0 CODE 0 text9 dist/default/production/lab1.X.production.o
 _width 62 0 BANK0 1 bssBANK0 dist/default/production/lab1.X.production.o
-___extmem_base 20000 0 ABS 0 - /tmp/xcYYFHN3c.o
+___extmem_base 20000 0 ABS 0 - /tmp/xc6AfhT1r.o
 __size_of_abs 0 0 ABS 0 - dist/default/production/lab1.X.production.o
 __size_of_pad 0 0 ABS 0 - dist/default/production/lab1.X.production.o
 __HdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production/lab1.X.production.o
